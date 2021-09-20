@@ -20,7 +20,8 @@
       <detail-goods-wear :wearInfo="wearInfo" @imgLoaded="imgLoaded" />
       <detail-goods-params :goodsParams="goodsParams" ref="params" />
       <detail-rate :userRate="userRate" ref="rate" />
-      <goods-list :goodsData="recommend" ref="recommend" />
+
+      <detail-recommend :goodsData="recommend" ref="recommend" />
     </scroll>
     <back-top @click.native="backTop" v-show="showBackTop" />
     <detail-bottom-bar @addCart="addCart" />
@@ -39,8 +40,6 @@ import {
 import Scroll from "@/components/common/scroll/Scroll.vue";
 import BackTop from "@/components/common/backtop/BackTop.vue";
 
-import GoodsList from "@/components/content/goodslist/GoodsList.vue";
-
 import DetailNavBar from "./detailComps/DetailNavBar.vue";
 import DetailSwiper from "./detailComps/DetailSwiper.vue";
 import DetailBaseInfo from "./detailComps/DetailBaseInfo.vue";
@@ -48,6 +47,7 @@ import DetailShopInfo from "./detailComps/DetailShopInfo.vue";
 import DetailGoodsWear from "./detailComps/DetailGoodsWear.vue";
 import DetailGoodsParams from "./detailComps/DetailGoodsParams.vue";
 import DetailRate from "./detailComps/DetailRate.vue";
+import DetailRecommend from "./detailComps/DetailRecommend.vue";
 import DetailBottomBar from "./detailComps/DetailBottomBar.vue";
 export default {
   name: "Detail",
@@ -55,7 +55,7 @@ export default {
     Scroll,
     BackTop,
 
-    GoodsList,
+    // GoodsList,
 
     DetailNavBar,
     DetailSwiper,
@@ -64,6 +64,7 @@ export default {
     DetailGoodsWear,
     DetailGoodsParams,
     DetailRate,
+    DetailRecommend,
     DetailBottomBar,
   },
   data() {

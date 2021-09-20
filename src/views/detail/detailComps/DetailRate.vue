@@ -49,6 +49,7 @@ export default {
 <style scoped>
 .rate {
   padding: 10px 5px;
+  border-bottom: 1px solid #ccc;
 }
 .title {
   height: 40px;

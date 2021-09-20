@@ -12,7 +12,7 @@ export default {
   name: "ProfileListB",
   methods: {
     toShopCart() {
-      this.$router.push("/shopcart");
+      this.$router.push("/cart");
     },
   },
 };

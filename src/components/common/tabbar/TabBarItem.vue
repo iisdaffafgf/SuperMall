@@ -34,10 +34,10 @@ export default {
 <style scoped>
 .tab-bar-item {
   text-align: center;
-  margin-top: 3px;
+  margin-top: 2px;
 }
 .text {
-  font-size: 13px;
+  font-size: 12px;
 }
 .img img {
   width: 26px;

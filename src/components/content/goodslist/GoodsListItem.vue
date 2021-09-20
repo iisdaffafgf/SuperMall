@@ -49,7 +49,7 @@ export default {
 }
 .goods-img {
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   border-radius: 5px;
 }
 .goods-info {

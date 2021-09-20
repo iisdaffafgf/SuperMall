@@ -10,7 +10,7 @@
         店铺
       </li>
       <li>
-        <div class="collect-img"></div>
+        <div :class="{ collectimg: collect }" @click="collectGoods"></div>
         收藏
       </li>
     </ul>
@@ -24,9 +24,22 @@
 <script>
 export default {
   naem: "DetailBottomBar",
+  data() {
+    return {
+      collect: false,
+    };
+  },
   methods: {
     addCart() {
       this.$emit("addCart");
+    },
+    collectGoods() {
+      this.collect = !this.collect;
+      if (this.collect) {
+        this.$toast("收藏成功~");
+      } else {
+        this.$toast("取消收藏成功~");
+      }
     },
   },
 };
@@ -85,5 +98,8 @@ export default {
 .addcart {
   background-color: rgb(255, 221, 16);
   color: #000;
+}
+.collectimg {
+  background-position: 0 -241px;
 }
 </style>
